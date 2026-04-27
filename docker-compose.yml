@@ -1,6 +1,6 @@
 services:
   web:
-    image: node:18-alpine
+    image: node:22-alpine
     working_dir: /app
     # Mount the current directory into the container
     volumes:
