@@ -1,5 +1,5 @@
 import React from 'react';
-import mockup from '../assets/mockup.png';
+import mockup from '../assets/Mockup.png';
 
 export default function Hero() {
   return (
