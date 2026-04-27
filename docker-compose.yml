@@ -1,11 +1,12 @@
-version: '3.8'
-
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: node:18-alpine
+    working_dir: /app
+    # Mount the current directory into the container
+    volumes:
+      - .:/app
+    # Expose the Vite preview port
     ports:
-      - "8080:80"
-    restart: unless-stopped
-    container_name: philsme-web
+      - "8080:4173"
+    # Install dependencies, build the project, and serve it via Vite preview
+    command: sh -c "npm install && npm run build && npm run preview -- --host 0.0.0.0"
