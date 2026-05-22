@@ -141,7 +141,7 @@ export default function RegistrationModal({ isOpen, onClose }) {
           </div>
 
           <div className="form-group checkbox-group" style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', margin: '1.5rem 0 1rem' }}>
-            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="Agreed" required style={{ width: 'auto', marginTop: '3px', transform: 'scale(1.2)', cursor: 'pointer' }} disabled={isSubmitting} />
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="Agreed" required style={{ width: '18px', height: '18px', minWidth: '18px', marginTop: '3px', cursor: 'pointer', accentColor: '#e63946' }} disabled={isSubmitting} />
             <label htmlFor="privacyPolicy" style={{ fontSize: '0.85rem', color: 'rgba(13, 13, 13, 0.8)', textTransform: 'none', fontWeight: '500', letterSpacing: 'normal', lineHeight: '1.5', cursor: 'pointer' }}>
               I agree that Discovery Capital Finance Corp. may collect, use, and process my personal information provided in this form for the purposes of registration and related updates.
             </label>
